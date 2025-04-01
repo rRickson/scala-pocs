@@ -13,7 +13,7 @@ trait FoodType {
 object FoodType {
   def fromString(value: String): Option[FoodType] = value.toLowerCase match {
     case "drink"   => Some(Drink)
-    case "food"    => Some(MainDish)
+    case "mainDish"    => Some(MainDish)
     case "dessert" => Some(Desert)
     case _         => None
   }
